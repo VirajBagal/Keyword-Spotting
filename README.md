@@ -4,7 +4,7 @@ In this project, we do an ablation study of existing audio processing models for
 # Comparison of different approaches
 
 | Method | Raw Audio | Mel Spec | MFCC | Test F1 |
-| --- | --- | --- | --- | --- | 
+| :---: | :---: | :---: | :---: | :---: | 
 | M5 | :heavy_check_mark: | :x: | :x: | 0.8636 |
 | Resnet-18 | :x: | :heavy_check_mark: | :x: | 0.9246 |
 | Resnet-18 | :x: | :x: | :heavy_check_mark: | 0.9522 |
@@ -16,7 +16,7 @@ In this project, we do an ablation study of existing audio processing models for
 
 
 | Input | Mixup | Mask Augs | Test F1 |
-| --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: |
 | Mel Spec | :x: | :x: | 0.9246 |
 | Mel Spec | :heavy_check_mark: | :x: | 0.9283 |
 | MFCC | :heavy_check_mark: | :x: | 0.9522 |
