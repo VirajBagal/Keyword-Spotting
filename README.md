@@ -1,7 +1,7 @@
 # Keyword-Spotting
 
 
-![alt text](https://github.com/VirajBagal/Keyword-Spotting/blob/main/keyword.jpg)
+![alt text](https://github.com/VirajBagal/Keyword-Spotting/blob/main/images/keyword.jpg)
 
 
 In this project, we do an ablation study of existing audio processing models for 'keyword spotting' using the Speech Commands dataset. The dataset has 65,000 one second long utterances of 30 short words in English done by thousands of people. 
@@ -33,6 +33,16 @@ python main.py --run_name <same_name_as_before> --data_path <path_where_dataset_
 ```
 
 # Comparison of different approaches
+
+Audio can be provided as input to the model in multiple forms such as raw waveform, mel spectrogram or MFCC. With MFCCor Mel Spectrogram, the pipeline is the following:
+
+![alt text](https://github.com/VirajBagal/Keyword-Spotting/blob/main/images/mfcc.png)
+
+
+With raw waveform as the input, the Wav2Vec 2.0 architecture by Facebook AI operates as below:
+
+![alt text](https://github.com/VirajBagal/Keyword-Spotting/blob/main/images/wav2vec.jpg)
+
 
 | Method | Raw Audio | Mel Spec | MFCC | Test F1 |
 | :---: | :---: | :---: | :---: | :---: | 
