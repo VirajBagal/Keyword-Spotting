@@ -1,5 +1,36 @@
 # Keyword-Spotting
-In this project, we do an ablation study of existing audio processing models for 'keyword spotting' using the Speech Commands dataset. The dataset has 65,000 1 second long utterances of 30 short words in English done by thousands of people. 
+
+
+![alt text](https://github.com/VirajBagal/Keyword-Spotting/keyword_spotting.jpeg?raw=true)
+
+
+In this project, we do an ablation study of existing audio processing models for 'keyword spotting' using the Speech Commands dataset. The dataset has 65,000 one second long utterances of 30 short words in English done by thousands of people. 
+
+Evaluation curves for all experiments can be found here: 
+
+https://wandb.ai/vbagal/speech_commands
+
+
+# How to reproduce the results?
+
+Clone the repo and follow these steps.
+
+- Download dataset using following command:
+```
+python download_dataset.py --save_dir <path_to_save_the_dataset>
+```
+
+- To train the baseline:
+```
+python main.py --run_name <some_name> --data_path <path_where_dataset_is_saved> --model M5 --input_type waveform --batch_size 512
+```
+
+To try out different approaches, please use the keywords like model, input_type, mixup, do_aug, cyclelr. For saving weights, new directory called checkpoints/<some_name> is created. 
+
+- To test the model:
+```
+python main.py --run_name <same_name_as_before> --data_path <path_where_dataset_is_saved> --ckpt_path <path_to_checkpoint> --model M5 --input_type waveform --batch_size 512 --mode test
+```
 
 # Comparison of different approaches
 
