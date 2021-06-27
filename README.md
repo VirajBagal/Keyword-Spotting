@@ -10,4 +10,16 @@ In this project, we do an ablation study of existing audio processing models for
 | Resnet-18 | :x: | :x: | :heavy_check_mark: | 0.9522 |
 | EfficientNet-B2 | :x: | :x: | :heavy_check_mark: | 0.9507 | 
 | EfficientNet-B4 | :x: | :x: | :heavy_check_mark: | 0.9558 | 
-| Wav2Vec 2.0 | :heavy_check_mark: | :x: | :x: | 0.9710 | 
+| Wav2Vec 2.0 | :heavy_check_mark: | :x: | :x: | 0.9746 | 
+
+# Ablation on ResNet-18
+
+
+| Input | Mixup | Mask Augs | Test F1 |
+| --- | --- | --- | --- |
+| Mel Spec | :x: | :x: | 0.9246 |
+| Mel Spec | :heavy_check_mark: | :x: | 0.9283 |
+| MFCC | :heavy_check_mark: | :x: | 0.9522 |
+| MFCC | :x: | :heavy_check_mark: | 0.9510 |
+| MFCC | :heavy_check_mark: | :heavy_check_mark: | 0.9410 |
+
