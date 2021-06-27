@@ -1,7 +1,7 @@
 # Keyword-Spotting
 
 
-![alt text](https://github.com/VirajBagal/Keyword-Spotting/keyword_spotting.jpeg?raw=true)
+![alt text](https://github.com/VirajBagal/Keyword-Spotting/blob/main/keynote_spotting.jpeg)
 
 
 In this project, we do an ablation study of existing audio processing models for 'keyword spotting' using the Speech Commands dataset. The dataset has 65,000 one second long utterances of 30 short words in English done by thousands of people. 
